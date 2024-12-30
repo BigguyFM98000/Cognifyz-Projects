@@ -1,0 +1,199 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Menu Styles */
+nav {
+    background-color: #972170;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.objectives, .projects, .skills{
+    border: 1px solid grey;
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Heading Styles */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+/* Image Styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #05b882;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 1.15s;
+}
+
+button:hover {
+    background-color: #999191;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #about{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    img{
+        max-width: 90%;
+    }
+    
+    section{
+        width:90%;
+    }
+
+    form {
+        max-width: 90%;
+        margin: 0 15px;
+        padding: 5px;
+    }
+
+    input[type="email"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #about{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+    img{
+        max-width: 90%;
+    }
+
+    section {
+        padding: 5px;
+        width:90%;
+    }
+
+    form {
+        max-width: 80%;
+        margin: 0 10px;
+        padding: 5px;
+    }
+
+    input[type="email"], button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
