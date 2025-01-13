@@ -1,0 +1,186 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #267967;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .section:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #09814f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0e8a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 28px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .section h2 {
+      font-size: 30px;
+    }
+  
+    form label {
+      font-size: 14px;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 14px;
+    }
+  
+    form button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 24px;
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  
+    .section h2 {
+      font-size: 24px;
+    }
+  
+    form label {
+      font-size: 12px;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 14px;
+    }
+  
+    form button {
+      font-size: 14px;
+    }
+  }
+  
