@@ -1,0 +1,202 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Landing page container */
+.landing-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header section */
+.header {
+    background-color: #3262e6;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.header .intro {
+    font-size: 1.2em;
+}
+
+/* Highlights section */
+.highlights {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlights h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* .highlights ul {
+    list-style: none;
+} */
+
+.highlights li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Qualifications section */
+.qualifications {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qualifications h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* .qualifications ul {
+    list-style: none;
+} */
+
+.qualifications li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Call to Action section */
+.cta {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-button {
+    background-color: #3262e6;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #3262e6;
+}
+
+.cta p {
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+.cta a {
+    color: #357ddb;
+    text-decoration: none;
+}
+
+/* Footer section */
+.footer {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #3262e6;
+    color: white;
+    border-radius: 8px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile responsiveness using media queries */
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header .intro {
+        font-size: 1.1em;
+    }
+
+    .highlights h2, .qualifications h2 {
+        font-size: 1.8em;
+    }
+
+    .highlights li, .qualifications li {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+
+    .footer p {
+        font-size: 1em;
+    }
+
+    .footer a {
+        font-size: 1em;
+    }
+}
+
+/* Mobile-first adjustments for very small screens (portrait phones) */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 30px 10px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header .intro {
+        font-size: 1em;
+    }
+
+    .highlights, .qualifications {
+        padding: 15px;
+    }
+
+    .cta-button {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer p {
+        font-size: 0.9em;
+    }
+}
