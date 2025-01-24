@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="image_gallery.css">
+</head>
+<body>
+    <div class="gallery">
+        <a href="#img1" class="thumbnail">
+            <img src="img1/gym.jpg" alt="Image 1">
+        </a>
+        <a href="#img2" class="thumbnail">
+            <img src="img1/locker-room.jpg" alt="Image 2">
+        </a>
+        <a href="#img3" class="thumbnail">
+            <img src="img1/lockers.jpg" alt="Image 3">
+        </a>
+        <a href="#img4" class="thumbnail">
+            <img src="img1/yellow-lockers.jpg" alt="Image 4">
+        </a>
+    </div>
+
+    <!-- Full-size image modal -->
+    <div id="img1" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="img1/gym.jpg" alt="Full-size Image 1">
+    </div>
+    <div id="img2" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="img1/locker-room.jpg" alt="Full-size Image 2">
+    </div>
+    <div id="img3" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="img1/lockers.jpg" alt="Full-size Image 3">
+    </div>
+    <div id="img4" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="img1/yellow-lockers.jpg" alt="Full-size Image 4">
+    </div>
+
+    <script src="image_gallery.js"></script>
+</body>
+</html>
